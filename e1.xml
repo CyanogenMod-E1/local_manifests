@@ -5,7 +5,7 @@
            	 fetch="https://github.com/CyanogenMod-E1" 
              revision="cm-12.1" />
 
-    <!-- Device -->
+	<!-- Device -->
 	<project name="android_device_sony_e1" path="device/sony/e1" remote="cm-e1" revision="cm-12.1" />
 
 	<!-- Device Common -->
