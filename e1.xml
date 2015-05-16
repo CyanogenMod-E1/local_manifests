@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	
-	<remote  name="gh"
-           fetch="https://github.com/" />
+	<remote  name="cm-e1"
+           	 fetch="https://github.com/CyanogenMod-E1" 
+             revision="cm-12.1" />
 
-	<project name="CyanogenMod-E1/android_device_sony_e1" path="device/sony/e1" remote="gh" revision="cm12.1" />
-	<project name="CyanogenMod-E1/android_kernel_msm8x10" path="kernel/sony/msm8610" remote="gh" revision="lp5.1" />
+    <!-- Device -->
+	<project name="android_device_sony_e1" path="device/sony/e1" remote="cm-e1" revision="cm-12.1" />
+
+	<!-- Device Common -->
+	<project name="cyanogenmod/android_device_sony_common" path="device/sony/common" remote="github" revision="cm-12.1" />
+	<project name="cyanogenmod/android_device_sony_qcom-common" path="device/sony/qcom-common" remote="github" revision="cm-12.0" />
+	<project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />
+
+	<!-- Kernel -->
+	<project name="android_kernel_msm8x10" path="kernel/sony/msm8610" remote="cm-e1" revision="cm-12.1" />
 	<!--<project name="CyanogenMod-E1/android_kernel_sony_msm8610" path="kernel/sony/msm8610" remote="gh" revision="master" />-->
-	<project name="CyanogenMod-E1/android_vendor_sony_e1" path="vendor/sony/e1" remote="gh" revision="cm12.1" />
-	
-	<project name="cyanogenmod/android_device_sony_common" path="device/sony/common" remote="gh" revision="cm-12.1" />
-	<project name="cyanogenmod/android_device_sony_qcom-common" path="device/sony/qcom-common" remote="gh" revision="cm-12.0" />
-	<project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="gh" revision="cm-12.1" />
 
+	<!-- Vendor -->
+	<project name="android_vendor_sony_e1" path="vendor/sony/e1" remote="cm-e1" revision="cm-12.1" />
+	
 </manifest>
